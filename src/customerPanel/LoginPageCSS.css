@@ -1,0 +1,56 @@
+@media (min-width:768px) and (max-width:991px){
+    .breakIt{
+           position:relative;
+           top:2vh;
+           
+           font-size: 27px;           
+    }
+    .label{
+        font-size:15px;
+    }
+    Form>Button{
+        height:32px;
+        width:10vw;
+        font-weight:500 !important;
+    }
+    .logintext{
+        font-size:12px;
+    }
+    .newUser{
+        font-size:12px !important;
+    }
+}
+@media (min-width:576px)and (max-width:767px){
+    .breakIt{
+           top:1vh !important;
+        font-size:24px;
+       
+    }
+    .logintext{
+        font-size:12px;
+    }
+    .label{
+        display:inline;
+        margin:0px;
+        font-size:14px;
+    }
+    .input{
+            height:32px;
+            font-size: 14px;
+            width: 32vw;
+    }
+    Form>Button{
+        height:30px;
+        font-weight:  600 !important;
+        font-size:smaller !important;
+    } 
+     .newUser{
+        font-size:11px !important;
+    }
+    .Navbar{
+        background-color:RGBA(256,256,256,0) !important;
+    }
+    #humberger{
+
+    }
+}
