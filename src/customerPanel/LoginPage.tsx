@@ -6,7 +6,7 @@ import {Container,Form,Row,Col,Button,} from 'react-bootstrap';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import {Link} from 'react-router-dom';
-import BgImage from './parking_back.jpg';
+import BgImage from '../assets/parking_back.jpg';
 function Login(){
     const navigate=useNavigate();
     const [data,validateData]=useState(false)
