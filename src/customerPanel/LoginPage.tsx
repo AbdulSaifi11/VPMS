@@ -6,6 +6,7 @@ import {Container,Form,Row,Col,Button,} from 'react-bootstrap';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import {Link} from 'react-router-dom';
+import BgImage from './parking_back.jpg';
 function Login(){
     const navigate=useNavigate();
     const [data,validateData]=useState(false)
@@ -42,7 +43,7 @@ function Login(){
     
    
     return(
-        <Container  fluid style={{backgroundImage:"url('/public/parking_back.jpg')",backgroundSize:"cover",height:"135vh",width:"98.82vw"}} className="m-0 p-0 min-vh-100">
+        <Container  fluid style={{backgroundImage:`url(${BgImage})`,backgroundSize:"cover",height:"135vh",width:"98.82vw"}} className="m-0 p-0 min-vh-100">
             <Navbar expand="md" style={{width:"15vw",height:"85vh",backgroundColor:"RGBA(150,150,150,0.5)" ,left:"1vw",top:"7vh"}} className="Navbar position-absolute">
                 <Navbar.Brand className="text-danger fw-bold" style={{position:"absolute",left:"1vw",top:"0vh"}}>VPMS <p style={{position:"absolute",top:"2vh",left:"0.3vw"}}>. .</p> </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" id="humberger"/>
