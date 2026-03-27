@@ -1,6 +1,11 @@
 body{
     overflow-x: hidden !important;
-}
+    background-image: url("src/assets/parking_back.jpg");
+    background-size:cover;
+    background-position: center;
+    background-attachment:fixed;
+     background-repeat: no-repeat;
+    }
 .navlinks{
     position:absolute;
     top:10vh;
@@ -10,8 +15,7 @@ body{
     color:rgb(200,90,23);
     width:100%;
     border:none;
-    margin-bottom:-20px
-
+    margin-bottom:-20px;
     
 }
 .navlinks Button:hover{
@@ -25,9 +29,9 @@ body{
     color:wheat !important;
 }
 .car{
-    position:relative;
-    width: 100px;
-    top:3.4vh;
+    position:fixed!important;
+    width: 120px;
+    bottom:-3vw!important;
     animation-name: moving;
     animation-duration: 3s;
     animation-timing-function:linear;
@@ -40,107 +44,610 @@ body{
     98% { transform: translateX(100vw); opacity: 0.2;}
     100%{opacity: 0;}
 }
-.footLogo{
-    position: relative;
-    top:1vh;
-    left:1vw;
-}
-.footLogo>.dots{
-    position:relative;
-    bottom:4.3vh;
-    left:0.2vw;
-}
-@media (min-width:768px) and (max-width:1400px){
-    body{
-        overflow-x: hidden !important;
+@media (min-width:1401px) and (max-width:2600px){   
+    .navlinks Button{
+        height: 7vh;
+        font-size: x-large;
+    } 
+    .navlinks #login{
+        font-size: x-large;
     }
-    .breakIt{
-           position:relative;           top:2vh;
-           font-size: 27px;           
+    .brand{
+        font-size: xx-large;
+    }
+    #content .breakIt{
+        font-size: 4rem;
+    }
+    #content>.logintext{
+        font-size: x-large;
+        position:relative !important;
+       top: -6vh;
     }
     .label{
-        font-size:15px;
+        font-size: x-large;
     }
-    Form>Button{
-        height:32px;
-        width:10vw;
-        font-weight:500 !important;
+     .input{
+            height:52px;
+            font-size: 22px;
     }
-    .logintext{
-        font-size:12px;
+     .feedback{
+        font-size: 20px;
+    }
+    .loginButton{
+        font-size: x-large;
     }
     .newUser{
-        font-size:12px !important;
+        font-size: larger !important;
+    }
+    .car{
+        width: 200px;
+        position:absolute !important;
+        top:50vh !important;
+    }
+     .car2{
+        width: 200px;
+        position:absolute !important;
+        top:50vh !important;
+    }
+    .footLogo{
+        position:relative;
+        top:30px;
+        left:10px;
+        width:5vw;
+        height:5vh;
+    }
+    .footLogo>.dots{
+        position:relative;
+        bottom:25px;
+        left:3px;
+    }
+    .footTitle{
+        position: relative;
+        top: 2vw;
+        left:10px;
+        display: inline;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .footLinks{
+        width:30vw;
+        position: relative;
+        gap:8vw;
+        left:60%;
+        bottom:11vh;
+        line-height: 50px;
+    }
+    .item{
+        font-size:large ;
+        margin:10px;
+        height:40px;
+    }
+    .headItem{
+        font-size: larger;
+    }
+    .socialLink{
+        width:15vw;
+        position: relative;
+        top:15vh;
+        left:2%;
+    }
+    .socialIcon{
+        width:2.2rem;
+        height: 2.2rem;
+    }
+    .footerBottom{
+        position: relative;
+        bottom: 2vh;
+        left:1vw;
+        width:95vw !important;
+       
+    }
+    #terms{
+        left:70vw !important;
+        margin-left:2vw;
+        
     }
 }
-@media (min-width:576px)and (max-width:767px){
+@media (min-width:992px) and (max-width:1400px){
     body{
-        overflow-x: hidden m !important;
-    }
-    .breakIt{
-           top:1vh !important;
-        font-size:24px;     
-    }
-    .logintext{
-        font-size:12px;
-    }
-    .label{
-        display:inline;
-        margin:0px;
-        font-size:14px;
-    }
-    .input{
-            height:32px;
-            font-size: 14px;
-            width: 32vw;
-    }
-    Form>Button{
-        height:30px;
-        font-weight:  600 !important;
-        font-size:smaller !important;
-    } 
-     .newUser{
-        font-size:11px !important;
-    }
-    .Navbar{
-        top:0px !important;
-    }
-    /* #humberger{
-        border: none !important;
-    } */
-}
-@media (min-width:0px) and (max-width:575px){
-      body{
         overflow-x: hidden !important;
     }
+    .navlinks Button{
+        height: 6vh;
+        font-size:large;
+    } 
+    .navlinks #login{
+        font-size:large;
+    }
+    .brand{
+        font-size: x-large;
+    }
     .breakIt{
-        font-size:20px;
+           position:relative;           
+           top:2vh;
+           font-size: 3rem;           
+    } 
+    .logintext{
+        font-size:large;
+        position:relative !important;
+        top: -8vh;
+    }
+    .label{
+        font-size:large;
+    }
+     .input{
+            height:40px;
+            font-size: 15px;
+    }
+     .feedback{
+        font-size: 13px;
+    }
+    .loginButton{
+        font-size: x-large;
+    }
+    .newUser{
+        font-size: small !important;
+    }
+    .car{
+        width: 170px;
+        position:absolute !important;
+        top:60vh !important;
+    }
+
+    .footLogo{
+        position:relative;
+        top:30px;
+        left:10px;
+        width:5vw;
+        height:5vh;
+    }
+    .footLogo>.dots{
+        position:relative;
+        bottom:25px;
+        left:3px;
+    }
+    .footTitle{
+        position: relative;
+        top: 3vw;
+        left:10px;
+        display: inline;
+        font-size: small;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .footLinks{
+        width:30vw;
+        position: relative;
+        gap:8vw;
+        left:56%;
+        bottom:11vh;
+        line-height: 50px;
+    }
+  .item{
+        font-size:smaller ;
+        margin-bottom:10px;
+        height:40px;
+        
+    }
+    .headItem{
+        font-size:1rem;
+    }
+    .socialLink{
+        width:15vw;
+        position: relative;
+        top:12vh;
+        left:2%;
+        font-size: small !important;
+    }
+    .socialIcon{
+        width:2rem;
+        height: 2rem;
+    }
+    .footerBottom{
+        position: relative;
+        bottom: 1vh;
+        left:1vw;
+        width:95vw !important;
+       
+    }
+    #terms{
+        left:60vw !important;
+        margin-left:2vw;
+        
+    }
+}
+@media (min-width:768px)and (max-width:991px){
+   body{
+        overflow-x: hidden !important;
+    }
+    .navlinks Button{
+        height: 6vh;
+        font-size:large;
+    } 
+    .navlinks #login{
+        font-size:large;
+    }
+    .brand{
+        font-size: x-large;
+    }
+    .breakIt{
+           position:relative;           
+           top:2vh;
+           font-size: 3rem;           
+    } 
+    .logintext{
+        font-size:large;
+        position:relative !important;
+        top: -8vh;
+    }
+    .label{
+        font-size:large;
+    }
+     .input{
+            height:40px;
+            font-size: 15px;
+    }
+     .feedback{
+        font-size: 13px;
+    }
+    .loginButton{
+        font-size: x-large;
+    }
+    .newUser{
+        font-size: small !important;
+    }
+    .car{
+        width: 165px;
+        position:absolute !important;
+        top:60vh !important;
+    }
+
+    .footLogo{
+        position:relative;
+        top:30px;
+        left:10px;
+        width:5vw;
+        height:5vh;
+    }
+    .footLogo>.dots{
+        position:relative;
+        bottom:25px;
+        left:3px;
+    }
+    .footTitle{
+        position: relative;
+        top: 3vw;
+        left:10px;
+        display: inline;
+        font-size: x-small;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .footLinks{
+        width:30vw;
+        position: relative;
+        gap:6vw;
+        left:50%;
+        bottom:10vh;
+        line-height: 45px;
+    }
+  .item{
+        font-size:small ;
+        margin-bottom:10px;
+        height:40px;
+        
+    }
+    .headItem{
+        font-size:0.95rem;
+    }
+    .socialLink{
+        width:15vw;
+        position: relative;
+        top:12vh;
+        left:2%;
+        font-size: small !important;
+    }
+    .socialIcon{
+        width:1.8rem;
+        height: 1.8rem;
+    }
+    .footerBottom{
+        position: relative;
+        bottom: 1vh;
+        left:1vw;
+        width:90vw !important;
+       
+    }
+    #terms{
+        float:right !important;
+        margin-right:-1.5vw;
+        
+    }
+    
+}
+@media (min-width:576px) and (max-width:767px){
+    body{
+        overflow-x: hidden !important;
+    }
+   #basic-navbar-nav{
+        background-color:rgba(238, 183, 107, 0.3)!important;
+        border-left: 3px solid rgb(243, 182, 97);
+        border-right: 3px solid rgb(243, 182, 97);
+        width:15vw;
+        height: 82vh;
+    }
+    .Navbar{
+        z-index: 1;
+        margin-top: 20px;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0)!important;
+        width:20vw !important;
+    }
+    .navlinks Button{
+        height: 6vh;
+        font-size:large;
+        margin-top: 8px;
+        width:19.5vw;
+    } 
+    .navlinks #login{
+        font-size:large;
+    }
+    .brand{
+        font-size: x-large;
+    }
+    .breakIt{
+           position:relative;           
+           top:2vh;
+           font-size: 2.4rem;           
+    } 
+    .logintext{
+        font-size:smaller;
+        position:relative !important;
+        top: -9vh;
+    }
+    #content{
+        width: 80vw!important;
+        position: absolute;
+        left:10vw !important;
+        z-index: 0;
+    }
+    .label{
+        font-size:1.1rem;
+    }
+     .input{
+            height:38px;
+            font-size: 14px;
+    }
+     .feedback{
+        font-size: 13px;
+    }
+    .loginButton{
+        font-size:large;
+    }
+    .newUser{
+        font-size: 0.85rem !important;
+    }
+    .car{
+        width: 140px;
+        position:absolute !important;
+        top:60vh !important;
+        animation-name: moving;
+        animation-duration: 1.9s;
+        animation-timing-function:linear;
+        animation-delay:  0.1s;
+        animation-fill-mode:  forwards;
+        animation-iteration-count:1;
+    }
+
+    .footLogo{
+        position:relative;
+        top:30px;
+        left:10px;
+        width:5vw;
+        height:5vh;
+    }
+    .footLogo>.dots{
+        position:relative;
+        bottom:25px;
+        left:3px;
+    }
+    .footTitle{
+        position: relative;
+        top: 3vw;
+        left:10px;
+        display: inline;
+        font-size: x-small;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .footLinks{
+        width:30vw;
+        position: relative;
+        gap:6vw;
+        left:50%;
+        bottom:11vh;
+        line-height: 45px;
+    }
+  .item{
+        font-size:small ;
+        margin-bottom:10px;
+        height:40px;
+        
+    }
+    .headItem{
+        font-size:0.95rem;
+    }
+    .socialLink{
+        width:15vw;
+        position: relative;
+        top:11vh;
+        left:2%;
+        font-size: small !important;
+    }
+    .socialIcon{
+        width:1.8rem;
+        height: 1.8rem;
+    }
+    .footerBottom{
+        position: relative;
+        bottom: 2vh;
+        left:1vw;
+        width:90vw !important;
+       
+    }
+    #terms{
+        left:40% !important;
+        margin-right:1vw;
+        
+    }
+}
+@media (min-width:0px) and (max-width:575px){
+    body{
+        overflow-x: hidden !important;
+    }
+    .navlinks Button{
+        height: 6vh;
+        font-size:large;
+        width:24.5vw;
+    } 
+    .navlinks #login{
+        font-size:large;
+    }
+    .brand{
+        font-size: x-large;
+    }
+    #basic-navbar-nav{
+        /* background-color:rgb(251, 231, 186)!important; */
+        background-color:rgba(238, 183, 107, 0.3)!important;
+        border-left: 3px solid rgb(243, 182, 97);
+        border-right: 3px solid rgb(243, 182, 97);
+        width:15vw;
+        height: 82vh;
+    }
+    .Navbar{
+        z-index: 1;
+        position: fixed;
+        margin-top: 20px;
+        width:25vw !important;
+        background-color: rgba(0, 0, 0, 0)!important;
+    }
+    .breakIt{
+           position:relative;           
+           top:2vh;
+           font-size: 2rem;           
+    } 
+     #content{
+        width: 90vw!important;
+        position: absolute;
+        left:5vw !important;
+        z-index: 0;
     }
     .logintext{
-        font-size: 10px;
-        margin-top:5px;
+        font-size:small;
+        position:relative !important;
+        top: -10vh;
     }
-     .label{
-       position: relative;
-       right:41px;
-        font-size:12px;
+    .label{
+        font-size:1rem;
     }
-    .input{
-            height:28px;
-            font-size: 12px;
-            width: 35vw;
-             position: relative;
-             right:60px;
+     .input{
+            height:37px;
+            font-size: 14px;
+            width:50vw;
     }
-    Form>Button{
-        height:27px;
-        font-weight:  600 !important;
-        font-size:smaller !important;
-    } 
-    .feedback{
+     .feedback{
         font-size: 12px;
     }
-     .newUser{
-        font-size:8px !important;
+    .loginButton{
+        font-size:large;
     }
+    .newUser{
+        font-size: 0.7rem !important;
+    }
+    .car{
+        width: 130px;
+        position:absolute !important;
+        top:60vh !important;
+        animation-name: moving;
+        animation-duration: 1.5s;
+        animation-timing-function:linear;
+        animation-delay:  0.1s;
+        animation-fill-mode:  forwards;
+        animation-iteration-count:1;
+    }
+    .footLogo{
+        position:relative;
+        top:30px;
+        left:10px;
+        width:5vw;
+        height:5vh;
+    }
+    .footLogo>h5{
+         font-size: smaller!important;
+    }
+    .footLogo>.dots{
+        position:relative;
+        bottom:18px;
+        left:3px;
+        font-size: smaller;
+    }
+    .footTitle{
+        position: relative;
+        top: 5vw;
+        left:10px;
+        display: inline;
+        font-size: xx-small;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .footTitle>span{
+        position: relative;
+        top:2vh;
+        right: 12vw;
+    }
+    .footLinks{
+        width:30vw;
+        position: relative;
+        gap:3vw;
+        left:45%;
+        bottom:9vh;
+        line-height:30px;
+    }
+  .item{
+        font-size:x-small ;
+        margin-bottom:10px;
+        height:20px;
+    }
+    .headItem{
+        font-size:0.6rem;
+    }
+    .socialLink{
+        width:12vw;
+        position: relative;
+        top:7vh;
+        left:2%;
+        font-size: x-small !important;
+        gap:10px !important;
+    }
+    .socialIcon{
+        width:1.3rem;
+        height: 1.3rem;
+    }
+    .footerBottom{
+        position: relative;
+        bottom: 2vh;
+        right:1vw;
+        width:90vw !important;
+       font-size: 7px!important;
+    }
+     .footerBottom>.copyright{
+       width:0.5rem !important;
+       left:1vw;
+       bottom:0.7vh !important;
+     }
+     .footerBottom>p{
+        font-size:0.5rem !important;
+     }
+    #terms{
+        left:30% !important;
+        margin-right:1.3vw;
+        font-size: 0.4rem!important;
+        
+    }
+   
 }
