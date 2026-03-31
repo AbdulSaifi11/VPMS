@@ -1,0 +1,42 @@
+.car{
+    top:65vh!important;
+}
+@media (min-width:576px) and (max-width:767px){
+.Namelabel{
+   position:relative;
+   left:10px;
+   line-height: 44px;
+}
+#Name{
+   position:relative;
+  right:35px !important;
+}
+.Phonelabel{
+   position:relative;
+   left:10px
+}
+#Phone{
+   position:relative;
+   right:25px !important;
+}
+}
+@media(min-width:0px) and (max-width:575px){
+.Namelabel{
+   position:relative;
+   left:20px;
+   line-height: 44px;
+}
+#Name{
+   position:relative;
+   right:35px !important;
+   top:10px;
+}
+.Phonelabel{
+   position:relative;
+   left:20px
+}
+#Phone{
+   position:relative;
+   left:50px !important;
+}
+}

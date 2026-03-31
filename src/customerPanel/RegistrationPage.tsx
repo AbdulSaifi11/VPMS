@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './LoginPageCSS.css';
+import './Registration.css';
 import {useState} from 'react';
 import {useNavigate} from 'react-router-dom';
 import {Container,Form,Row,Col,Button} from 'react-bootstrap';
@@ -37,8 +38,8 @@ function Login(){
         validateData(true);
         return;
     }
-    const Confirm_p=/^\d{6}$/
-    if(!Confirm_p.test(confirm_p)){
+
+    if(password!==confirm_p){
         setConfirmPError("confirm password must be same as password!");
         validateData(true);
         return;
@@ -53,12 +54,12 @@ function Login(){
             <div id="content" style={{width:"85vw",height:"90vh",position:"absolute",left:"7vw",top:"7vh", backgroundColor:"RGBA(255,255,255,0.4)"}} className="customCSS z-index-0 d-grid justify-content-center rounded-4 ">
                 <Col lg={12} md={12} sm={12} ><h1 className="breakIt text-sm-1"style={{fontFamily:"generic",textAlign:"center",position:"relative",top:"1vh"}} ><span className="text-danger fst-italic" >V</span>alet <span className="text-danger fst-italic">P</span>arking <span className="text-danger fst-italic">M</span>anagement <span className=" text-danger fst-italic">S</span>ystem</h1></Col><br></br>
                 <Form noValidate validated={data} onSubmit={Validate} className="d-flex flex-column gap-3" style={{position:"relative",bottom:"4vh"}}>
-                 <Form.Group as={Row} style={{position:"relative",left:"4vw"}}>
-                <Form.Label lg={1} md={1} sm={1} xl={1} xxl={1} column name="Name">Name:</Form.Label>
-                <Col lg={4} md={4} sm={4} xl={4} xxl={4}><Form.Control type="text" name="Name" onBlur={(e)=>{ e.target.value = e.target.value.trim();}} id="Name" placeholder ="Enter Name.." required/>
+                 <Form.Group as={Row} style={{position:"relative",left:"5vw"}}>
+                <Form.Label className="Namelabel" lg={1} md={1} sm={3} xl={1} xs={4} xxl={1} column name="Name">Name:</Form.Label>
+                <Col  lg={4} md={4} sm={8} xl={4} xs={7} xxl={4}><Form.Control type="text" name="Name" onBlur={(e)=>{ e.target.value = e.target.value.trim();}} id="Name" placeholder ="Enter Name.." required/>
                 <Form.Control.Feedback type="invalid">Enter Valid Name</Form.Control.Feedback></Col>
-                <Form.Label lg={1} md={1} sm={1} xl={1} xxl={1} name="Email" column  >Phone:</Form.Label>
-                <Col lg={4} md={4} sm={4} xl={4} xxl={4}><Form.Control type="phone"  onBlur={(e)=>{ e.target.value = e.target.value.trim();}} placeholder="Enter Phone No." required/> 
+                <Form.Label className="Phonelabel" lg={1} md={1} sm={3} xs={2} xl={1} xxl={1} name="Phone" column style={{position:"relative",right:"10px"}} >Phone:</Form.Label>
+                <Col lg={4} md={4} sm={8} xs={7} xl={4} xxl={4} style={{position:"relative",right:"13px"}} ><Form.Control type="tel" pattern="[0-9]{10}"  onBlur={(e)=>{ e.target.value = e.target.value.trim();}} placeholder="Enter Phone No." id="Phone" required/> 
                 <Form.Control.Feedback type='invalid'>Number is Invalid</Form.Control.Feedback></Col>
                   </Form.Group>
                     <Form.Group as={Row}>
@@ -73,7 +74,7 @@ function Login(){
                     </Form.Group>
                      <Form.Group as={Row} >
                         <Form.Label column lg={1} md={1} sm={1} xs={1} xxl={1} className=' label mx-5 fs-6' name="confirm_p">Confirm Password:</Form.Label>
-                        <Col lg={8} md={8} sm={8} xs={6} xxl={9}><Form.Control className="input" type="password" id="confirm_p" isInvalid={!!passError} onChange={(e)=>validateConfirm(e.target.value)} placeholder="Re-enter Password!" onBlur={(e)=>{e.target.value=e.target.value.trim()}} required/>
+                        <Col lg={8} md={8} sm={8} xs={6} xxl={9}><Form.Control className="input" type="password" id="confirm_p" isInvalid={confirm_p.length>0 && password!==confirm_p} onChange={(e)=>validateConfirm(e.target.value)} placeholder="Re-enter Password!" onBlur={(e)=>{e.target.value=e.target.value.trim()}} required/>
                         <Form.Control.Feedback className='feedback'  type="invalid">{confirmPError}</Form.Control.Feedback> </Col>
                     </Form.Group>
                 <Button  className="w-50 d-block mx-auto text-dark  border border-0" style={{backgroundColor:"RGB(255,158,23)"}} type="submit">Register</Button>
