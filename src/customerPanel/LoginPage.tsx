@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './LoginPageCSS.css';
 import {useState} from 'react';
-import {useNavigate} from 'react-router-dom';
+import {NavLink, useNavigate} from 'react-router-dom';
 import {Container,Form,Row,Col,Button} from 'react-bootstrap';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
@@ -50,11 +50,12 @@ function Login(){
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Navbar.Brand className="brand text-danger fw-bold" style={{position:"absolute",left:"1vw",top:"0vh"}}>VPMS <p style={{position:"absolute",top:"2vh",left:"0.3vw",color:"black"}}>. .</p></Navbar.Brand>
                     <Nav className="navlinks d-flex flex-column fw-bold" style={{width:"100%"}}>
-                        <Nav.Link><Button>Home</Button></Nav.Link>
+                        <Nav.Link as={NavLink} to="/"><Button>Home</Button></Nav.Link>
                         <Nav.Link><Button>About</Button></Nav.Link>
                         <Nav.Link><Button>Career</Button></Nav.Link>
                         <Nav.Link><Button>Contact</Button></Nav.Link>
-                        <Link to="/" id="login"  style={{position:"absolute",top:"65vh",left:"5vw",textDecoration:"none",color:"Gray",fontWeight:"bold",textShadow:"0px 2px 4px orange",cursor:"pointer"}}>Log in</Link>
+                        <a href="#" style={{position:"relative",top:"12vh",left:"5vw",textDecoration:"none",color:"darkgray",width:"4vw",borderRadius:"5px"}}>Log in</a>
+                        
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
@@ -89,7 +90,7 @@ function Login(){
                 </div>
                 <div className="d-flex footLinks">
                     <div className="headItem d-flex flex-column fw-bold ">Products
-                        <Link to="" className='item text-decoration-none text-secondary'>Features</Link>
+                        <Link to="/features" className='item text-decoration-none text-secondary'>Features</Link>
                         <Link to="#" className='item text-decoration-none text-secondary'>Pricing</Link>
                         <Link to="#" className='item text-decoration-none text-secondary'>Services</Link>
                     </div>
