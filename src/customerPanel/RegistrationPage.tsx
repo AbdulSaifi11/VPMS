@@ -46,7 +46,7 @@ function Login(){
     }
     setError("")
     validateData(true);
-    navigate("/customer");
+    navigate("/choose");
 }
     return(
         <>
@@ -77,9 +77,9 @@ function Login(){
                         <Col lg={8} md={8} sm={8} xs={6} xxl={9}><Form.Control className="input" type="password" id="confirm_p" isInvalid={confirm_p.length>0 && password!==confirm_p} onChange={(e)=>validateConfirm(e.target.value)} placeholder="Re-enter Password!" onBlur={(e)=>{e.target.value=e.target.value.trim()}} required/>
                         <Form.Control.Feedback className='feedback'  type="invalid">{confirmPError}</Form.Control.Feedback> </Col>
                     </Form.Group>
-                <Button  className="w-50 d-block mx-auto text-dark  border border-0" style={{backgroundColor:"RGB(255,158,23)"}} type="submit">Register</Button>
+                <Button  className="w-50 d-block mx-auto text-dark  border border-0" style={{backgroundColor:"RGB(255,158,23)"}} type="submit" onClick={navigate as any}>Register</Button>
                      </Form>
-                     <p className=" newUser text-center fs-6 " style={{position:"relative",bottom:"3.5vh"}} >Already Registered_<Link to="/" className="text-decoration-none text-primary">Login</Link></p>
+                     <p className=" newUser text-center fs-6 " style={{position:"relative",bottom:"3.5vh"}} >Already Registered_<Link to="/login" className="text-decoration-none text-primary">Login</Link></p>
             </div>
             <img src={Car} className='car text-success  m-0 p-0' alt="car"/>
             </Container>
@@ -94,13 +94,13 @@ function Login(){
                 </div>
                 <div className="d-flex footLinks">
                     <div className="headItem d-flex flex-column fw-bold ">Products
-                        <Link to="" className='item text-decoration-none text-secondary'>Features</Link>
-                        <Link to="#" className='item text-decoration-none text-secondary'>Pricing</Link>
-                        <Link to="#" className='item text-decoration-none text-secondary'>Services</Link>
+                        <Link to="/features" className='item text-decoration-none text-secondary'>Features</Link>
+                        <Link to="/price" className='item text-decoration-none text-secondary'>Pricing</Link>
+                        <Link to="/service" className='item text-decoration-none text-secondary'>Services</Link>
                     </div>
                     <div className="headItem d-flex flex-column fw-bold">Resources
-                         <Link to="" className='item text-decoration-none text-secondary'>Blog</Link>
-                        <Link to="#" className='item text-decoration-none text-secondary'>Support</Link>
+                         <Link to="/blog" className='item text-decoration-none text-secondary'>Blog</Link>
+                        <Link to="/support" className='item text-decoration-none text-secondary'>Support</Link>
                     </div>
                     <div className="headItem d-flex flex-column fw-bold">Company
                         <Link to="" className='item text-decoration-none text-secondary'>About</Link>

@@ -1,17 +1,28 @@
-import Login from './customerPanel/LoginPage';
+import Login from './customerPanel/CustomerLoginPage';
 import  Register  from './customerPanel/RegistrationPage';
-import CustomerPanel from './customerPanel/CustomerPanel';
-import {Route,Routes} from 'react-router-dom';
-import { Features } from './customerPanel/NavLink';
+import LoginChoose from './customerPanel/LoginChoose';
+import { Route,Routes} from 'react-router-dom';
+// import {Features} from './customerPanel/FooterLink';
+// import { Pricing } from './customerPanel/FooterLink';
+// import { Service } from './customerPanel/FooterLink';
+// import { Blog } from './customerPanel/FooterLink';
+// import { Support} from './customerPanel/FooterLink';
+import MainCustomer from './customerPanel/mainCustomerPage';
 // import ValidEmail from './emalValidation';
 function App(){
   return(
     <>
     <Routes>
-      <Route path="/" element={<Login/>} />
-      <Route path="/login" element={<Register />}/>
-      <Route path="/customer" element={<CustomerPanel/>}/>
+      <Route path="/login" element={<Login/>} />
+      <Route path="/" element={<Register />}/>
+      <Route path="/choose" element={<LoginChoose/>}/>
+      <Route path="/maincustomer" element={<MainCustomer/>}/>
+      {/* <Route path="/feature" element={<Cover/>}/>
       <Route path="/features" element={<Features/>}/>
+      <Route path="/price" element={<Pricing/>}/>
+      <Route path="/service" element={<Service/>}/>
+      <Route path="/blog" element={<Blog/>}/>
+      <Route path="/support" element={<Support/>}/> */}
     </Routes>
     {/* <ValidEmail/> */}
     </>
