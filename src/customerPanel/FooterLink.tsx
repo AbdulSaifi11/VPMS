@@ -1,10 +1,8 @@
 import {RiFunctionAiLine,RiArrowRightDoubleLine} from "@remixicon/react";
 import {Container,Image} from 'react-bootstrap';
 import PNG_parking from '/src/assets/PNG_parking.png';
-import useRef from 'react';
 import './FooterLinkcss.css';
-export default function FooterLink(){
-function Features(){
+export  function Features(){
     return(
     <>
     <Container className="container fluid">
@@ -39,32 +37,32 @@ function Features(){
     </>
  )
 } 
-   function Pricing(){
-    return(
-        <>
-           <h5>Pricing</h5>
-       <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br> </>
-)
-}
- function Service(){
-    return(
-    <>
-   <h5>Service</h5>
-    <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br></>
-)
-}
- function Blog(){
-    return(
-    <>
-    <h5>Blog</h5>
-    <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br></>
-)
-}
- function Support(){
-    return(
-    <>
-   <h5>Support</h5>
-    <br></br><br></br></>
-)
-}
-}
+//    function Pricing(){
+//     return(
+//         <>
+//            <h5>Pricing</h5>
+//        <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br> </>
+// )
+// }
+//  function Service(){
+//     return(
+//     <>
+//    <h5>Service</h5>
+//     <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br></>
+// )
+// }
+//  function Blog(){
+//     return(
+//     <>
+//     <h5>Blog</h5>
+//     <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br></>
+// )
+// }
+//  function Support(){
+//     return(
+//     <>
+//    <h5>Support</h5>
+//     <br></br><br></br></>
+// )
+// }
+

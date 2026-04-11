@@ -2,7 +2,7 @@ import Login from './customerPanel/CustomerLoginPage';
 import  Register  from './customerPanel/RegistrationPage';
 import LoginChoose from './customerPanel/LoginChoose';
 import { Route,Routes} from 'react-router-dom';
-// import {Features} from './customerPanel/FooterLink';
+import {Features} from './customerPanel/FooterLink';
 // import { Pricing } from './customerPanel/FooterLink';
 // import { Service } from './customerPanel/FooterLink';
 // import { Blog } from './customerPanel/FooterLink';
@@ -17,12 +17,12 @@ function App(){
       <Route path="/" element={<Register />}/>
       <Route path="/choose" element={<LoginChoose/>}/>
       <Route path="/maincustomer" element={<MainCustomer/>}/>
-      {/* <Route path="/feature" element={<Cover/>}/>
+      {/* <Route path="/feature" element={<Cover/>}/> */}
       <Route path="/features" element={<Features/>}/>
-      <Route path="/price" element={<Pricing/>}/>
-      <Route path="/service" element={<Service/>}/>
-      <Route path="/blog" element={<Blog/>}/>
-      <Route path="/support" element={<Support/>}/> */}
+      {/* <Route path="/price" element={<Pricing/>}/> */}
+      {/* <Route path="/service" element={<Service/>}/> */}
+      {/* <Route path="/blog" element={<Blog/>}/> */}
+      {/* <Route path="/support" element={<Support/>}/> */}
     </Routes>
     {/* <ValidEmail/> */}
     </>
