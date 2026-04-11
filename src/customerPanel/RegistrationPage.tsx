@@ -79,7 +79,7 @@ function Login(){
                     </Form.Group>
                 <Button  className="w-50 d-block mx-auto text-dark  border border-0" style={{backgroundColor:"RGB(255,158,23)"}} type="submit" onClick={navigate as any}>Register</Button>
                      </Form>
-                     <p className=" newUser text-center fs-6 " style={{position:"relative",bottom:"3.5vh"}} >Already Registered_<Link to="/login" className="text-decoration-none text-primary">Login</Link></p>
+                     <p className=" newUser text-center fs-6 " style={{position:"relative",bottom:"3.5vh"}} >Already Registered_<Link to="/choose" className="text-decoration-none text-primary">Login</Link></p>
             </div>
             <img src={Car} className='car text-success  m-0 p-0' alt="car"/>
             </Container>
