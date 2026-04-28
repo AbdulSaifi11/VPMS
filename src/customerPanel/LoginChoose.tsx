@@ -1,7 +1,7 @@
 import {Card} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './FooterLinkcss.css';
+import './LoginChoose.css';
 export default function LoginChoose(){
     return(
         <>

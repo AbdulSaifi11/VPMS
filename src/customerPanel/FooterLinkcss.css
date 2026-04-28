@@ -1,4 +1,5 @@
-.container{
+                                                        /*Feature CSS--_______*/
+.Mycontainer{
     background-color:rgba(0,0,0,0.2);
 }
 .feature{
@@ -113,25 +114,26 @@
         }
     }
 }
-.card{
+                                                            /*Pricing CSS--_______*/
+.this_card{
     width:20vw;
     height:45vh;
    background-color:rgba(70, 66, 42, 0.145);
    box-shadow: 2px 3px 2px 5px rgba(0, 0, 0, 0.525);
 }
-.card>h4{
+.this_card>h4{
     position:relative;
     top:8vh;
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-.card>p{
+.this_card>p{
     position:relative;
     top:9vh;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.card>#link{
+.this_card>#link{
     position:relative;
     top:10vw;
     background-color: rgba(255, 228, 196, 0.15);
@@ -157,13 +159,217 @@
         height:100vh;
         align-items: center;
     }
-    .card{
+    .this_card{
         width:35vw;
         height:27vh;
     }
     @media(max-width:768px){
-        .card>#link{
+        .this_card>#link{
             top:7vh;
         }
     }
+}
+#price{
+    width:25vw;
+    height:50vh;
+    box-shadow: 2px 4px 9px   black;
+    background-color: rgba(0, 0, 0, 0.515);
+    border-radius:90px 0px ;
+}
+#price>header{
+   color:white;
+   text-align: center;
+   font-size: larger;
+   font-weight: bold;
+}
+#price>#pricetag>p{
+    position:absolute;
+    top:1vh;
+    left:1.5vw;
+}
+#price>#pricetag{
+    background-color: bisque;
+    width:12vw;
+    height:6vh ;
+    border-radius:90px 0px 0px 0px ;
+    box-shadow: 0px 6px 6px burlywood;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    position:absolute;
+    right: 0px;
+    top:7vh;   
+}
+#price>#booking{
+     background-color: bisque;
+    width:12vw;
+    height:6vh ;
+    border-radius:0px 90px 0px 0px ;
+    box-shadow: 0px 6px 6px burlywood;
+    display: inline-block;
+    font-style: italic;
+    text-align: center;
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+     position:absolute;
+    left: 0px;
+    top:40vh;   
+}
+#price>#booking>p{
+position: absolute;
+top:1.5vh;
+}
+@media (min-width:992px) and (max-width:1050px){
+    #price>header{
+        font-size:large;
+        position: relative;
+        top:1vh;
+    }
+    .parkingPoint>h6{
+        font-size:small;
+    }
+   #price>#pricetag{
+    height: 5vh;
+    width: 13vw;
+    
+   }
+   #price>#booking{
+    height: 5vh;
+
+   }
+}
+@media (min-width:576px) and (max-width:991px){
+    .cardContainer{
+        align-items: center;
+        gap:4vh;
+    }
+    #price{
+    width:50vw;
+    height:50vh;
+    }
+    #price>header{
+        font-size:1.7rem;
+    }
+    .parkingPoint>h6{
+        font-size:larger;
+    }
+   #price>#pricetag{
+    height: 6vh;
+    width: 20vw;
+   }
+    #price>#pricetag>p{
+    position: relative;
+    left:2vw;
+   }
+   #price>#booking{
+    height: 6vh;
+     width: 20vw;
+   }
+}
+@media (min-width:200px) and (max-width:575px){
+    .cardContainer{
+        align-items: center;
+        gap:4vh;
+        flex-direction: column;
+    }
+    #price{
+    width:80vw;
+    height:50vh;
+    }
+    #price>header{
+        font-size:1.5rem;
+        position: relative;
+        left:2vw;
+    }
+    .parkingPoint>h6{
+        font-size:larger;
+    }
+   #price>#pricetag{
+    height: 5vh;
+    width: 35vw;
+   }
+    #price>#pricetag>p{
+    position: relative;
+    left:2vw;
+   }
+   #price>#booking{
+    height: 5vh;
+     width: 35vw;
+     position: absolute!important;
+     top:42vh;
+   }
+}
+                                                            /*Services CSS--______*/ 
+.serviceBox{
+    text-decoration: none;
+}  
+.columnService{
+    border:1px solid rgb(214, 201, 143);
+    border-radius:20px;
+     
+}
+.manage{
+    animation-name:zoom-out;
+    animation-duration:2s;
+    animation-timing-function: ease-out;
+}
+@keyframes zoom-out{
+    0%{font-size:25px;}
+    50%{font-size: 32px;}
+    100%{font-size: 25px;}
+}
+                                                            /*Support CSS--_____*/
+.supportConatiner{
+    width:100vw;
+    height:115vh;
+}
+.supportConatiner>#topImage{
+    width:100vw;
+    height:55vh;
+}
+.image_Text{
+  position: absolute;
+  top: 25%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  animation-name:move;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+@keyframes move{
+    0%{left:-30%}
+    100%{left:50%}
+}
+.cards{
+    display: flex;
+    flex-direction:row;
+    width:100vw;
+    height: 60vh;
+    justify-content:space-evenly;
+}
+.header{
+    background-color: rgb(49, 60, 89);
+    color:white;
+}
+.support_card{
+    width:30vw;
+    height:40vh;
+   margin-top: 7vh;
+   box-shadow:1px 1px 8px black;
+   cursor:pointer;
+}
+.support_card:hover{
+    width:32vw;
+    height:42vh;
+}
+.support_card h5{
+    padding: 0.5em;
+    margin:0.5em;
 }

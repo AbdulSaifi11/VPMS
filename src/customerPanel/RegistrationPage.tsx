@@ -99,12 +99,12 @@ function Login(){
                         <Link to="/service" className='item text-decoration-none text-secondary'>Services</Link>
                     </div>
                     <div className="headItem d-flex flex-column fw-bold">Resources
-                         <Link to="/blog" className='item text-decoration-none text-secondary'>Blog</Link>
+                         <Link to="/blog" className='item text-decoration-none text-secondary'>Career</Link>
                         <Link to="/support" className='item text-decoration-none text-secondary'>Support</Link>
                     </div>
                     <div className="headItem d-flex flex-column fw-bold">Company
-                        <Link to="" className='item text-decoration-none text-secondary'>About</Link>
-                        <Link to="#" className='item text-decoration-none text-secondary'>Career</Link>
+                        <Link to="" className='item text-decoration-none text-secondary'>Home</Link>
+                        <Link to="#" className='item text-decoration-none text-secondary'>About</Link>
                         <Link to="#" className='item text-decoration-none text-secondary'>Contact</Link>
                     </div>                    
                 </div>

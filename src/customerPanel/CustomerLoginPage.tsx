@@ -75,7 +75,7 @@ function Login(){
                     </Form.Group>
                 <Button  className="w-50 d-block mx-auto text-dark  border border-0" style={{backgroundColor:"RGB(255,158,23)"}} type="submit" onClick={navigate as any}>Login</Button>
                      </Form>
-                     <p className=" newUser text-center fs-6 " >New User_<Link to="/register" className="text-decoration-none text-primary">CreateAccount</Link></p>
+                     <p className=" newUser text-center fs-6 " >New User_<Link to="/" className="text-decoration-none text-primary">CreateAccount</Link></p>
             </div>
             <img src={Car} className='car text-success  m-0 p-0' alt="car"/>
             </Container>
@@ -95,12 +95,12 @@ function Login(){
                         <Link to="/service" className='item text-decoration-none text-secondary'>Services</Link>
                     </div>
                     <div className="headItem d-flex flex-column fw-bold">Resources
-                         <Link to="/blog" className='item text-decoration-none text-secondary'>Blog</Link>
+                        <Link to="#" className='item text-decoration-none text-secondary'>Career</Link>
                         <Link to="/support" className='item text-decoration-none text-secondary'>Support</Link>
                     </div>
                     <div className="headItem d-flex flex-column fw-bold">Company
+                        <Link to="#" className='item text-decoration-none text-secondary'>Home</Link>
                         <Link to="" className='item text-decoration-none text-secondary'>About</Link>
-                        <Link to="#" className='item text-decoration-none text-secondary'>Career</Link>
                         <Link to="#" className='item text-decoration-none text-secondary'>Contact</Link>
                     </div>                    
                 </div>
