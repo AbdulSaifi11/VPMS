@@ -95,13 +95,13 @@ function Login(){
                         <Link to="/service" className='item text-decoration-none text-secondary'>Services</Link>
                     </div>
                     <div className="headItem d-flex flex-column fw-bold">Resources
-                        <Link to="#" className='item text-decoration-none text-secondary'>Career</Link>
+                        <Link to="/Acc" className='item text-decoration-none text-secondary'>Career</Link>
                         <Link to="/support" className='item text-decoration-none text-secondary'>Support</Link>
                     </div>
                     <div className="headItem d-flex flex-column fw-bold">Company
-                        <Link to="#" className='item text-decoration-none text-secondary'>Home</Link>
-                        <Link to="" className='item text-decoration-none text-secondary'>About</Link>
-                        <Link to="#" className='item text-decoration-none text-secondary'>Contact</Link>
+                        <Link to="/login" className='item text-decoration-none text-secondary'>Home</Link>
+                        <Link to="/Acc" className='item text-decoration-none text-secondary'>About</Link>
+                        <Link to="/Acc" className='item text-decoration-none text-secondary'>Contact</Link>
                     </div>                    
                 </div>
                 <div className="w-100 border border-light line" style={{position:"absolute",bottom:"55px"}}></div>

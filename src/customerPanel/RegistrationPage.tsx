@@ -103,7 +103,7 @@ function Login(){
                         <Link to="/support" className='item text-decoration-none text-secondary'>Support</Link>
                     </div>
                     <div className="headItem d-flex flex-column fw-bold">Company
-                        <Link to="" className='item text-decoration-none text-secondary'>Home</Link>
+                        <Link to="/login" className='item text-decoration-none text-secondary'>Home</Link>
                         <Link to="#" className='item text-decoration-none text-secondary'>About</Link>
                         <Link to="#" className='item text-decoration-none text-secondary'>Contact</Link>
                     </div>                    

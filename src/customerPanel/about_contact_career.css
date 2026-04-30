@@ -1,0 +1,45 @@
+#containerA{
+    width:100vw;
+    height:100vh;
+    background-color: rgb(95, 158, 160);
+    text-align: center;
+}
+#containerA>p{
+    font-size: 2rem;
+    font-weight:bold;
+}
+.aboutHead{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#aboutContent{
+    background-color: rgba(245, 245, 220, 0.361);
+    width: 70vw;
+    height: 85vh;
+}
+#parkSign{
+    position: absolute;
+    bottom:0px;
+    right:0px;
+    color:rgb(198, 198, 9);
+   height:20vh;
+   width: 20vw;
+}
+#road_png{
+    width:22vw;
+    position:absolute;
+    bottom: 0px;
+    left:0px;
+}
+#parking_png{
+    width:22vw;
+    position:absolute;
+    bottom: 0px;
+    left:0px;
+}
+#road_parking{
+position: relative;
+bottom: 60vh;
+left:70vw;
+width:20vw;
+height:50vh;
+}

@@ -2,7 +2,7 @@ import {RiFunctionAiLine,RiArrowRightDoubleLine,RiCornerDownRightFill,RiPhoneLin
 import {Container,Image,Card,Col,Row} from 'react-bootstrap';
 import {Link} from 'react-router-dom'
 import PNG_parking from '/src/assets/PNG_parking.png';
-import './FooterLinkcss.css';
+import '/src/customerPanel/FooterLinkcss.css';
 import Support_Image from '/src/assets/Sup.jpg';
 export  function Features(){
     return(
@@ -132,22 +132,22 @@ return(
         <Card className="support_card">
             <Card.Header className="header text-center fw-bold">Contact</Card.Header>
             <Card.Body className="bg-light">
-                <h5><RiPhoneLine /> +91 1234567890</h5>
-                <h5><RiMailLine /><a className="text-dark text-decoration-none" href="mailto:supportvpms123@gmail.com"> supportvpms123@gmail.com</a></h5>
+                <h6><RiPhoneLine /> +91 1234567890</h6>
+                <h6><RiMailLine /><a className="text-dark text-decoration-none" href="mailto:supportvpms123@gmail.com"> supportvpms123@gmail.com</a></h6>
             </Card.Body>
         </Card>
          <Card className="support_card">
             <Card.Header className="header text-center fw-bold">Mobile App</Card.Header>
             <Card.Body className="bg-light">
-                <h5><RiArrowRightDoubleLine />All things in single app.</h5>
-                <h5><RiArrowRightDoubleLine />User History.</h5>
-                <h5><RiArrowRightDoubleLine />Fast Service.</h5>
+                <h6><RiArrowRightDoubleLine />All things in single app.</h6>
+                <h6><RiArrowRightDoubleLine />User History.</h6>
+                <h6><RiArrowRightDoubleLine />Fast Services.</h6>
             </Card.Body>
         </Card>
          <Card className="support_card">
             <Card.Header  className="header text-center fw-bold">FAQ</Card.Header>
             <Card.Body className="bg-light">
-                <p className="overflow-scroll " style={{height:"28vh"}}>
+                <p className="overflow-scroll " >
 👉 Q1: What should I do if my booking is not confirmed?<br/>
 👉 A: Please check your payment status or try booking again. <br /><br />
 

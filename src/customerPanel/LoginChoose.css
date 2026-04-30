@@ -1,4 +1,4 @@
-.card{
+.card_login{
     width:20vw;
     height:50vh;
     text-align:center;
@@ -6,17 +6,17 @@
     border-radius: 20px 0px 10px 0px;
     box-shadow: 0px 30px 50px lightblue;
 }
-.card>h4{
+.card_login>h4{
     color:lightsteelblue;
     position:relative;
     top:10vh;
 }
-.card>p{
+.card_login>p{
     position:relative;
     top:10vh;
     color:antiquewhite
 }
-.card>#link{
+.card_login>#link{
     position:relative;
     top:10vh;
     text-decoration: none;
@@ -25,3 +25,56 @@
     background-color: rgba(127, 255, 212, 0.411);
     font-family: 'Times New Roman', Times, serif;
 }   
+@media(min-width:991px) and (max-width:1100px){
+.contain{
+    flex-direction: row !important;
+}
+.card_login{
+    width:30vw;
+    height:30vh;
+    text-align:center;
+    background-image: url("/src/assets/card_formal.avif");
+    border-radius: 20px 0px 10px 0px;
+    box-shadow: 0px 30px 50px lightblue;
+}
+}
+@media(min-width:768px) and (max-width:992px){
+.contain{
+    flex-direction: row !important;
+}
+.card_login{
+    width:30vw;
+    height:40vh;
+    text-align:center;
+    background-image: url("/src/assets/card_formal.avif");
+    border-radius: 20px 0px 10px 0px;
+    box-shadow: 0px 30px 50px lightblue;
+}
+}
+@media(min-width:576px) and (max-width:767px){
+.contain{
+    flex-direction: row !important;
+}
+.card_login{
+    width:30vw;
+    height:50vh;
+    text-align:center;
+    background-image: url("/src/assets/card_formal.avif");
+    border-radius: 20px 0px 10px 0px;
+    box-shadow: 0px 30px 50px lightblue;
+}
+}
+@media(min-width:0px) and (max-width:576px){
+.contain{
+    flex-direction:column !important;
+}
+.card_login{
+    width:60vw;
+    height:50vh;
+    margin-bottom:1vh;
+    text-align:center;
+    background-image: url("/src/assets/card_formal.avif");
+    border-radius: 20px 0px 10px 0px;
+    box-shadow: 0px 30px 50px lightblue;
+}
+}
