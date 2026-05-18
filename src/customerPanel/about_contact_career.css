@@ -43,3 +43,153 @@ left:70vw;
 width:20vw;
 height:50vh;
 }
+@media (min-width:992px) and (max-width:1100px){
+    #about{
+        width:10vw !important;
+    }
+    .aboutHead{
+        width:15vw;
+    }
+    #road_parking{
+        width:40vw;
+        height:20vh;
+        position: absolute !important;
+        left:60vw !important;
+        top:20vh;
+    }
+    #parking_png{
+        visibility: visible;
+        width:25vw;
+        height:25vh;
+    }
+    #road_png{
+        visibility: visible;
+        width:25vw;
+        height:25vh;
+    }
+    #aboutContent{
+    background-color: rgba(245, 245, 220, 0.361);
+    width: 55vw;
+    height: 70vh;
+    }
+    #road_parking{
+    position: relative;
+    bottom: 60vh;
+    left:70vw;
+    width:12vw;
+    height:42vh;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    #about{
+        width:10vw !important;
+    }
+    .aboutHead{
+        width:20vw;
+    }
+    #road_parking{
+        width:40vw;
+        height:20vh;
+        position: absolute !important;
+        left:60vw !important;
+        top:20vh;
+    }
+    #parking_png{
+        visibility: visible;
+        width:25vw;
+        height:25vh;
+    }
+    #road_png{
+        visibility: visible;
+        width:25vw;
+        height:25vh;
+    }
+    #aboutContent{
+    background-color: rgba(245, 245, 220, 0.361);
+    width: 55vw;
+    height: 70vh;
+    }
+    #road_parking{
+    position: relative;
+    bottom: 60vh;
+    left:70vw;
+    width:12vw;
+    height:42vh;
+    }
+}
+@media (min-width:576px) and (max-width:767px){
+    #about{
+        width:10vw !important;
+    }
+    .aboutHead{
+        width:25vw;
+    }
+    #road_parking{
+        width:40vw;
+        height:20vh;
+        position: absolute !important;
+        left:60vw !important;
+        top:20vh;
+    }
+    #parking_png{
+        visibility: visible;
+        width:22vw;
+        height:22vh;
+    }
+    #road_png{
+        visibility: visible;
+        width:22vw;
+        height:22vh;
+    }
+    #aboutContent{
+    background-color: rgba(245, 245, 220, 0.361);
+    width: 55vw;
+    height: 70vh;
+    font-size: small;
+    }
+    #road_parking{
+    position: relative;
+    bottom: 60vh;
+    left:70vw;
+    width:12vw;
+    height:42vh;
+    }
+}
+@media (min-width:300px) and (max-width:575px){
+    #about{
+        width:50vw !important;
+    }
+    .aboutHead{
+        width:35vw;
+    }
+    #road_parking{
+        width:40vw;
+        height:20vh;
+        position: absolute !important;
+        left:40vw !important;
+        top:24vh;
+    }
+    #parking_png{
+        visibility: visible;
+        width:30vw;
+        height:20vh;
+    }
+    #road_png{
+        visibility: visible;
+        width:30vw;
+        height:25vh;
+    }
+    #aboutContent{
+    background-color: rgba(245, 245, 220, 0.361);
+    width: 90vw;
+    height: 70vh;
+    font-size: x-small;
+    }
+    #road_parking{
+    position: relative;
+    bottom: 60vh;
+    left:70vw;
+    width:12vw;
+    height:42vh;
+    }
+}

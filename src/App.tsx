@@ -7,7 +7,7 @@ import { Pricing } from './customerPanel/FooterLink';
 import { Service } from './customerPanel/FooterLink';
 import { Support} from './customerPanel/FooterLink';
 import MainCustomer from './customerPanel/mainCustomerPage';
-import About_Cont_Career from './customerPanel/about_contact_career';
+import About from './customerPanel/about_contact_career.tsx';
 // import ValidEmail from './emalValidation';
 function App(){
   return(
@@ -21,7 +21,7 @@ function App(){
       <Route path="/price" element={<Pricing/>}/>
       <Route path="/service" element={<Service/>}/>
       <Route path="/support" element={<Support/>}/>
-      <Route path="/Acc" element={<About_Cont_Career/>}/>
+      <Route path="/about"   element={<About/>}/>
     </Routes>
     {/* <ValidEmail/> */}
     </>

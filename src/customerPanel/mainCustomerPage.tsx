@@ -1,8 +1,9 @@
-export default function MainCustomer(){
-    return(
-        <>
-        <h1>Main Customer Page..</h1>
-        </>
-    )
+import  './mainCustomerPage.css';
+import './LoginPageCSS.css';
+const CustomerPage: React.FC = () => {
+ return(
+  <p>Main page</p>
+ )
+};
 
-}
+export default CustomerPage;

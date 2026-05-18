@@ -7,13 +7,17 @@ import  Parking from '/src/assets/Parking_sign.png';
 import {RiTwitterXFill,RiInstagramLine,RiLinkedinBoxFill  ,RiFacebookBoxFill,RiCopyrightLine} from '@remixicon/react'
 import 'react-bootstrap';
 function AboutC(){
-const refren=useRef<HTMLDivElement|null>(null);
+const refAbout=useRef<HTMLDivElement|null>(null);
 let gotoAbout=()=>{
-    refren.current?.scrollIntoView({behavior:"smooth"});
+    refAbout.current?.scrollIntoView({behavior:"smooth"});
+}
+const refCareer=useRef<HTMLDivElement|null>(null);
+let gotoCareer=()=>{
+    refCareer.current?.scrollIntoView({behavior:"smooth"});
 }
 return(<>
     <Container fluid id="containerA">
-        <section id="about" ref={refren}> 
+        <section id="about" ref={refAbout}> 
             <p className='fs-2 fw-bold aboutHead'>ABOUT US</p>
             <p id="aboutContent">We are dedicated to simplifying and modernizing the parking experience through our <span className="text-warning">Valet Parking Management System</span>. Our goal is to provide a smart, efficient, and user-friendly solution that helps manage vehicle parking seamlessly.
                 This system is designed to reduce manual effort, minimize waiting time, and enhance overall customer satisfaction. By integrating digital tracking and organized vehicle management, we aim to improve operational efficiency for parking staff and convenience for users.
@@ -29,9 +33,9 @@ return(<>
             <Image src={Road} id="road_png" alt="roadPng"/>
             <Image src={Parking} id="parking_png"/></div>
         </section>
-        {/* <section id="career">
+        <section id="career" ref={refCareer}>
             <h5>Career</h5>
-        </section> */}
+        </section>
     </Container>
     <footer style={{backgroundColor:"rgba(240,240,240,0.6)", height:"auto",width:"100%"}}  className="footer position-relative rounded-3">
                     <div className="footLogo "><h5 className="text-danger fw-bold">VPMS</h5><h5 className='dots fw-bold'>. .</h5></div>
@@ -49,12 +53,12 @@ return(<>
                             <Link to="/service" className='item text-decoration-none text-secondary'>Services</Link>
                         </div>
                         <div className="headItem d-flex flex-column fw-bold">Resources
-                            <Link to="/Acc" className='item text-decoration-none text-secondary'>Career</Link>
+                            <Link to="/about" onClick={gotoCareer} className='item text-decoration-none text-secondary'>Career</Link>
                             <Link to="/support" className='item text-decoration-none text-secondary'>Support</Link>
                         </div>
                         <div className="headItem d-flex flex-column fw-bold">Company
                             <Link to="/login" className='item text-decoration-none text-secondary'>Home</Link>
-                            <Link to="/Acc" onClick={gotoAbout} className='item text-decoration-none text-secondary'>About</Link>
+                            <Link to="/about" onClick={gotoAbout} className='item text-decoration-none text-secondary'>About</Link>
                             <Link to="/Acc" className='item text-decoration-none text-secondary'>Contact</Link>
                         </div>                    
                     </div>
