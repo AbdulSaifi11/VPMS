@@ -55,7 +55,6 @@ function Login(){
                         <Nav.Link><Button>Career</Button></Nav.Link>
                         <Nav.Link><Button>Contact</Button></Nav.Link>
                         <a href="#" style={{position:"relative",top:"12vh",left:"5vw",textDecoration:"none",color:"darkgray",width:"4vw",borderRadius:"5px"}}>Log in</a>
-                        
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
