@@ -1,7 +1,7 @@
 import '/src/customerPanel/about_contact_career.css';
-import {Container,Image} from 'react-bootstrap';
-import {Link} from 'react-router-dom';
-import {useRef} from 'react';
+import {Card,Container,Image,Button,Form,Col,Row} from 'react-bootstrap';
+import {Link,useNavigate} from 'react-router-dom';
+import {useRef,useState} from 'react';
 import Road from '/src/assets/Road_PNG.png';
 import  Parking from '/src/assets/Parking_sign.png';
 import {RiTwitterXFill,RiInstagramLine,RiLinkedinBoxFill  ,RiFacebookBoxFill,RiCopyrightLine} from '@remixicon/react'
@@ -14,6 +14,35 @@ let gotoAbout=()=>{
 const refCareer=useRef<HTMLDivElement|null>(null);
 let gotoCareer=()=>{
     refCareer.current?.scrollIntoView({behavior:"smooth"});
+}
+const refContact=useRef<HTMLDivElement|null>(null);
+let gotoContact=()=>{
+    refContact.current?.scrollIntoView({behavior:"smooth"});
+}
+//validation form
+   const navigate=useNavigate();
+    const [data,validateData]=useState(false)
+    const[emailD,ValidateEmail]=useState("");
+    const[emailError,setError]=useState("");
+   function Validate(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+
+    let allD = event.currentTarget;
+
+    if (allD.checkValidity() === false) {
+        event.stopPropagation();
+        validateData(true);
+        return;
+    }
+    const emailPattern=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if(!emailPattern.test(emailD)){
+        setError("email is invalid!");
+        validateData(true);
+        return;
+    }
+    setError("")
+    validateData(true);
+    navigate("/choose");
 }
 return(<>
     <Container fluid id="containerA">
@@ -34,7 +63,59 @@ return(<>
             <Image src={Parking} id="parking_png"/></div>
         </section>
         <section id="career" ref={refCareer}>
-            <h5>Career</h5>
+            <div className="team">
+                <h1 className=" heading fw-bold">Join Our Team</h1>
+                <h6 className='text-info'>Build your future with us. Explore exciting career opportunities and grow in a creative and friendly environment.</h6>
+                <Button className="my-5 bg-secondary">View Opening</Button>
+            </div>
+            <div className="positions d-flex justify-content-evenly">
+                <Card id="card">
+                    <Card.Header className="fw-bold">Frontend Developer</Card.Header>
+                    <Card.Body>
+                        <p>We want a passionate react developer with creation of responsive & clean UI</p>
+                        <Button>Apply Now</Button>
+                    </Card.Body>
+                </Card>
+                <Card id="card">
+                    <Card.Header className="fw-bold">Java Developer</Card.Header>
+                    <Card.Body>
+                        <p> Candidate should know about core java development and spring or springboot framework for backend & any SQL database.</p>
+                        <Button>Apply Now</Button>
+                    </Card.Body>
+                </Card>
+                <Card id="card">
+                    <Card.Header className="fw-bold">HR Intern</Card.Header>
+                    <Card.Body>
+                        <p>It is mandetory a graduated candidate with a good communication skills.</p>
+                        <Button>Apply Now</Button>
+                    </Card.Body>
+                </Card>
+            </div>
+        </section>
+        <section id="contact_Sec" ref={refContact}>
+            <Form noValidate validated={data} onSubmit={Validate} className="w-100 d-flex flex-column gap-4 ">
+                <h4 className="form_heading text-secondary">Connect with Us</h4>
+                <Form.Group id='F_Group' as={Row}>
+                <Form.Label as={Col} xs={1} sm={1} md={2} lg={2} className="label_contact text-light">Name-</Form.Label>&nbsp;&nbsp;&nbsp;&nbsp;
+                <Col xs={7} sm={7} md={5} lg={5}><Form.Control type="text" onBlur={(e)=>{ e.target.value = e.target.value.trim();}} required placeholder="Enter Name.."  />
+                <Form.Control.Feedback type="invalid" className="text-start">Enter Valid Name</Form.Control.Feedback></Col>
+                </Form.Group>
+                <Form.Group id='F_Group' as={Row}>
+                <Form.Label as={Col} xs={1} sm={1} md={2} lg={2} className=" label_contact text-light">Email-</Form.Label>&nbsp;&nbsp;&nbsp;&nbsp;
+                <Col xs={7} sm={7} md={5} lg={5}><Form.Control type="text" isInvalid={!!emailError} id="Email" placeholder="Enter Email.." onBlur={(e)=>{e.target.value=e.target.value.trim()}} value={emailD} onChange={(e)=>{ValidateEmail(e.target.value)}} required />
+                <Form.Control.Feedback type="invalid" className="text-start">{emailError}</Form.Control.Feedback></Col>
+                </Form.Group>
+                <Form.Group id='F_Group' as={Row}>
+                <Form.Label as={Col} xs={1} sm={1} md={2} lg={2} className=" label_contact text-light">Phone-</Form.Label>&nbsp;&nbsp;&nbsp;&nbsp;
+                <Col xs={7} sm={7} md={5} lg={5}><Form.Control type="tel" pattern="[0-9]{10}" onBlur={(e)=>{ e.target.value = e.target.value.trim();}} required placeholder="Enter Mobile No.."  />
+                <Form.Control.Feedback type="invalid" className="text-start">Enter Valid Number</Form.Control.Feedback></Col>
+                </Form.Group>
+                <Form.Group id='F_Group' as={Row}>
+                <Form.Label as={Col} xs={1} sm={1} md={2} lg={2} className="label_contact text-light">Any Quiery-</Form.Label>&nbsp;&nbsp;&nbsp;&nbsp;
+                <Col xs={7} sm={7} md={5} lg={5}><Form.Control as="textarea" rows={2} type="text" onBlur={(e)=>{ e.target.value = e.target.value.trim();}} placeholder="Enter Name.."  /></Col>
+                </Form.Group>
+                <Col id="submit_butt"><Button className="w-25 bg-warning" type="submit">Submit</Button></Col>
+            </Form>
         </section>
     </Container>
     <footer style={{backgroundColor:"rgba(240,240,240,0.6)", height:"auto",width:"100%"}}  className="footer position-relative rounded-3">
@@ -59,7 +140,7 @@ return(<>
                         <div className="headItem d-flex flex-column fw-bold">Company
                             <Link to="/login" className='item text-decoration-none text-secondary'>Home</Link>
                             <Link to="/about" onClick={gotoAbout} className='item text-decoration-none text-secondary'>About</Link>
-                            <Link to="/Acc" className='item text-decoration-none text-secondary'>Contact</Link>
+                            <Link to="/about" onClick={gotoContact} className='item text-decoration-none text-secondary'>Contact</Link>
                         </div>                    
                     </div>
                     <div className="w-100 border border-light line" style={{position:"absolute",bottom:"55px"}}></div>
