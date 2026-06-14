@@ -4,6 +4,8 @@ import {Link,useNavigate} from 'react-router-dom';
 import {useRef,useState} from 'react';
 import Road from '/src/assets/Road_PNG.png';
 import  Parking from '/src/assets/Parking_sign.png';
+import contact_back from '/src/assets/contact_bg.jpg';
+import career_back from '/src/assets/career_bg.jpg';
 import {RiTwitterXFill,RiInstagramLine,RiLinkedinBoxFill  ,RiFacebookBoxFill,RiCopyrightLine} from '@remixicon/react'
 import 'react-bootstrap';
 function AboutC(){
@@ -63,7 +65,7 @@ return(<>
             <Image src={Parking} id="parking_png"/></div>
         </section>
         <section id="career" ref={refCareer}>
-            <div className="team">
+            <div className="team" style={{backgroundImage:`url(${career_back})`}}>
                 <h1 className=" heading fw-bold">Join Our Team</h1>
                 <h6 className='text-info'>Build your future with us. Explore exciting career opportunities and grow in a creative and friendly environment.</h6>
                 <Button className="my-5 bg-secondary">View Opening</Button>
@@ -92,7 +94,7 @@ return(<>
                 </Card>
             </div>
         </section>
-        <section id="contact_Sec" ref={refContact}>
+        <section id="contact_Sec" ref={refContact} style={{backgroundImage:`url(${contact_back})`}}>
             <Form noValidate validated={data} onSubmit={Validate} className="w-100 d-flex flex-column gap-4 ">
                 <h4 className="form_heading text-secondary">Connect with Us</h4>
                 <Form.Group id='F_Group' as={Row}>
