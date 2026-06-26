@@ -51,9 +51,9 @@ function Login(){
                     <Navbar.Brand className="brand text-danger fw-bold" style={{position:"absolute",left:"1vw",top:"0vh"}}>VPMS <p style={{position:"absolute",top:"2vh",left:"0.3vw",color:"black"}}>. .</p></Navbar.Brand>
                     <Nav className="navlinks d-flex flex-column fw-bold" style={{width:"100%"}}>
                         <Nav.Link as={NavLink} to="/login"><Button>Home</Button></Nav.Link>
-                        <Nav.Link><Button>About</Button></Nav.Link>
-                        <Nav.Link><Button>Career</Button></Nav.Link>
-                        <Nav.Link><Button>Contact</Button></Nav.Link>
+                        <Nav.Link as={NavLink} to="/about"><Button>About</Button></Nav.Link>
+                        <Nav.Link as={NavLink} to="/about"><Button>Career</Button></Nav.Link>
+                        <Nav.Link as={NavLink} to="/about"><Button>Contact</Button></Nav.Link>
                         <a href="#" style={{position:"relative",top:"12vh",left:"5vw",textDecoration:"none",color:"darkgray",width:"4vw",borderRadius:"5px"}}>Log in</a>
                     </Nav>
                 </Navbar.Collapse>

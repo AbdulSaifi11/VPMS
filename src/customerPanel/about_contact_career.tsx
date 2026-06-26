@@ -114,7 +114,7 @@ return(<>
                 </Form.Group>
                 <Form.Group id='F_Group' as={Row}>
                 <Form.Label as={Col} xs={1} sm={1} md={2} lg={2} className="label_contact text-light">Any Quiery-</Form.Label>&nbsp;&nbsp;&nbsp;&nbsp;
-                <Col xs={7} sm={7} md={5} lg={5}><Form.Control as="textarea" rows={2} type="text" onBlur={(e)=>{ e.target.value = e.target.value.trim();}} placeholder="Enter Name.."  /></Col>
+                <Col xs={7} sm={7} md={5} lg={5}><Form.Control as="textarea" rows={2} type="text" onBlur={(e)=>{ e.target.value = e.target.value.trim();}} placeholder="Enter Anything.."  /></Col>
                 </Form.Group>
                 <Col id="submit_butt"><Button className="w-25 bg-warning" type="submit">Submit</Button></Col>
             </Form>
