@@ -4,6 +4,9 @@
     background-color:whitesmoke;
     position:relative;
     right:1.1vw;
+    margin: 0px;
+    padding :0px;
+    overflow-x: hidden;
 }
 .cont{
     width: 100%;
@@ -139,4 +142,13 @@
     border-radius: 15px;
     cursor: pointer;
 }
+}
+                                    /*LEFT*/
+.lft>h6{
+    color:#6390BD;
+    border:1px solid #6390BD;
+}
+.lft>p{
+    color:#A7B8D3;
+    font-size:0.78rem;
 }
