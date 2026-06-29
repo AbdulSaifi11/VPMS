@@ -1,7 +1,7 @@
 import  './mainCustomerPage.css';
 import {Container,Navbar,Nav,Button} from 'react-bootstrap';
 import {NavLink} from 'react-router-dom';
-import {RiUserFill} from '@remixicon/react';
+import {RiUserFill,RiArrowRightUpLine} from '@remixicon/react';
 import './LoginPageCSS.css';
 function CustomerPage(){
     return(
@@ -21,13 +21,22 @@ function CustomerPage(){
                 
           </Navbar>
           <div className="cont d-flex">
-             <div className="lft w-50 p-3 d-flex flex-column gap-2 justify-content-center align-items-center">
-                 <h6 className="w-50 rounded-pill text-center fw-normal">Enterprise-grade infrastructure</h6>
+             <div className="lft w-50 p-3 d-flex flex-column gap-4 justify-content-center align-items-center">
+                 <h6 className="title_lft w-50 rounded-pill text-center fw-normal">Enterprise-grade infrastructure</h6>
                  <h3 className="text-light font-monospace">Parking that <span style={{color:"#6390BD"}}>runs itself</span></h3>
-                 <p className='w-75 px-5'>Real-time occupancy, automated enforcement, and revenue reporting — all from one platform you can actually use.</p>
+                 <p className='para_lft w-75 px-5'>Real-time occupancy, automated enforcement, and revenue reporting — all from one platform you can actually use.</p>
+                 <Button className='btn btn-dark w-50'>Explore Services <RiArrowRightUpLine /></Button>
              </div>
-             <div className="rght bg-warning w-50">
-                Hello
+             <div className="rght bg-warning w-50 d-flex flex-column justify-content-center align-items-center">
+                <div className="border border-light w-75 h-50">
+                    <p>Lot A. Floor 2 .Live</p>
+                    <div className="slots ">
+                        <div>A1</div><div>A2</div><div>A3</div><div>A4</div><div>A5</div><div>A6</div>
+                        <div>B1</div><div>B2</div><div>B3</div><div>B4</div><div>B5</div><div>B6</div>
+                        <div>C1</div><div>C2</div><div>C3</div><div>C4</div><div>C5</div><div>C6</div>
+                        <div>D1</div><div>D2</div><div>D3</div><div>D4</div><div>D5</div><div>D6</div>
+                    </div>
+                </div>
              </div>
           </div>
         </Container>
