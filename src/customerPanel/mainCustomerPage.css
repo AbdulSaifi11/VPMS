@@ -454,4 +454,11 @@ html,body{
     height:160vh;
     background-color: aliceblue;
 }
+#whatWeOffer>p{
+    position: relative;
+    left:4vw;
+    top:3vh;
+    font-family: 'Times New Roman', Times, serif;
+    color:#6390BD;
+}
 }
