@@ -1,6 +1,7 @@
 import  './mainCustomerPage.css';
 import {Container,Navbar,Nav,Button} from 'react-bootstrap';
 import {NavLink} from 'react-router-dom';
+import {Link} from 'react-router-dom'
 import {RiUserFill,RiArrowRightUpLine,RiCircleFill} from '@remixicon/react';
 import './LoginPageCSS.css';
 function CustomerPage(){
@@ -44,8 +45,64 @@ function CustomerPage(){
                      <p>4 <span style={{color:"#6390bd90"}}>Reserved</span></p>
                     </div>
                 </div>
+             
+             <div className="mainDetail d-flex text-light gap-5" >
+                <div style={{display:"inline"}}>
+                    <h4>2.4M</h4>
+                    <p style={{fontSize:"0.8rem",width:"110px",position:"relative",top:"-1vh",left:"0vw"}}>Space Managed</p>
+                </div>
+                <div style={{display:"inline"}}>
+                    <h4>99.9%</h4>
+                    <p style={{fontSize:"0.8rem",width:"110px",position:"relative",top:"-1vh",left:"0vw"}}>System uptime</p>
+                </div>
+                <div style={{display:"inline"}}>
+                    <h4>340+</h4>
+                    <p style={{fontSize:"0.8rem",width:"110px",position:"relative",top:"-1vh",left:"0vw"}}>Facilities worldwide</p>
+                </div>
+                <div style={{display:"inline"}}>
+                    <h4>38%</h4>
+                    <p style={{fontSize:"0.8rem",width:"130px",position:"relative",top:"-1vh",left:"0vw"}}>Avg. revenue increase</p>
+                </div>
+             </div>
              </div>
           </div>
+          <section id="whatWeOffer">
+                <p>What We Offer</p>
+                <h4>Everything your lot needs</h4>
+                <h6>Modular services you can deploy together or separately — connect to your existing hardware or use ours.</h6>
+                <div className="offer_service d-grid">
+                    <div className="off_block">
+                        <div id="yellow"></div>
+                        <p className="block_head">Real-time Occupancy</p>
+                        <p className="block_content">Sensor fusion gives you per-space status updated every 2 seconds. Push to signage, apps, or your own systems.<br></br><Link to="" className="text-decoration-none">Learn More</Link></p>
+                    </div>
+                    <div className="off_block">
+                        <div id="green"></div>
+                        <p className="block_head">Automated payments</p>
+                        <p className="block_content">License-plate-linked billing, mobile pay, and monthly permits — no ticket, no kiosk, no friction.<br></br><Link to="" className="text-decoration-none">Learn More</Link></p>
+                    </div>
+                    <div className="off_block">
+                        <div id="blue"></div>
+                        <p className="block_head">Violation enforcement</p>
+                        <p className="block_content">Camera-based detection issues notices automatically. Integrate with your city's citation system or use ours.<br></br><Link to="" className="text-decoration-none">Learn More</Link></p>
+                    </div>
+                    <div className="off_block">
+                        <div id="black"></div>
+                        <p className="block_head">Reservation & pre-booking</p>
+                        <p className="block_content">Let drivers reserve spaces in advance. Dynamic pricing fills your lot at peak times without manual intervention.<br></br><Link to="" className="text-decoration-none">Learn More</Link></p>
+                    </div>
+                     <div className="off_block">
+                        <div id="red"></div>
+                        <p className="block_head">Analytics & reporting</p>
+                        <p className="block_content">Revenue breakdowns, dwell time, turnover rate, and custom dashboards delivered daily or on demand.<br></br><Link to="" className="text-decoration-none">Learn More</Link></p>
+                    </div>
+                    <div className="off_block">
+                        <div id="aqua"></div>
+                        <p className="block_head">API & integrations</p>
+                        <p className="block_content">REST + webhooks. Connect ParkOS to your ERP, mobility platform, or building management system in minutes.<br></br><Link to="" className="text-decoration-none">Learn More</Link></p>
+                    </div>
+                </div>
+          </section>
         </Container>
         </>
     )

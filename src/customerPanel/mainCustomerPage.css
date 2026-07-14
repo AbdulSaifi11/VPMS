@@ -3,7 +3,7 @@ html,body{
 }
 #customer_container{
     width:105vw;
-    height:200vh;
+    height:240vh;
     background-color:whitesmoke;
     position:relative;
     right:1.1vw;
@@ -13,7 +13,7 @@ html,body{
 }
 .cont{
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     background-color:#0E1B35;
 }
 .customer_navbar{
@@ -308,6 +308,12 @@ html,body{
 .divider_slot_sec{
     width:60vw;
 }
+.mainDetail{
+    position: relative;
+    right:0vw !important;
+    top:15vh;
+    gap: 1.5vw !important;
+}
 }
 @media (min-width:200px) and (max-width:575px){
 .cont{
@@ -321,5 +327,131 @@ html,body{
 }
 .divider_slot_sec{
     width:60vw;
+}
+.mainDetail{
+    position: relative;
+    right:0vw !important;
+    top:15vh;
+    gap: 4vh !important;
+    flex-direction: column;
+}
+}
+.mainDetail{
+    align-items: center;
+    text-align: center;
+    position: relative;
+    right:30vw;
+    top:15vh;
+}
+#whatWeOffer{
+    height:100vh;
+    background-color: aliceblue;
+}
+#whatWeOffer>p{
+    position: relative;
+    left:4vw;
+    top:5vh;
+    font-family: 'Times New Roman', Times, serif;
+    color:#6390BD;
+}
+#whatWeOffer>h4{
+    position: relative;
+    left:4vw;
+    top:2vh;   
+}
+#whatWeOffer>h6{
+    position: relative;
+    left:4vw;
+    top:3vh;
+    font-weight: lighter; 
+}
+.offer_service{
+    position: relative;
+    left:4vw;
+    top:7vh;
+    width:90%;
+    grid-template-columns:1fr 1fr 1fr;
+    justify-content: center;
+    gap:30px;
+}
+.offer_service>.off_block{
+    width:20vw;
+    height:30vh;
+}
+.offer_service>.off_block>#yellow{
+    width:2.5rem;
+    height:2.5rem;
+    background-color: lightyellow;
+    border-radius: 10px;
+    margin:10px;
+}
+.offer_service>.off_block>#green{
+    width:2.5rem;
+    height:2.5rem;
+    background-color: rgb(212, 244, 212);
+    border-radius: 10px;
+    margin:10px;
+}
+.offer_service>.off_block>#blue{
+    width:2.5rem;
+    height:2.5rem;
+    background-color: rgb(216, 228, 244);
+    border-radius: 10px;
+    margin:10px;
+}
+.offer_service>.off_block>#black{
+    width:2.5rem;
+    height:2.5rem;
+    background-color:rgba(66, 65, 65, 0.196);
+    border-radius: 10px;
+    margin:10px;
+}
+.offer_service>.off_block>#red{
+    width:2.5rem;
+    height:2.5rem;
+    background-color:rgb(254, 227, 227);
+    border-radius: 10px;
+    margin:10px;
+}
+.offer_service>.off_block>#aqua{
+    width:2.5rem;
+    height:2.5rem;
+    background-color:rgb(207, 252, 252);
+    border-radius: 10px;
+    margin:10px;
+}
+.offer_service>.off_block>.block_head{
+    font-size: 0.9em;
+}
+.offer_service>.off_block>.block_content{
+    font-size: 0.8em;
+    position: relative;
+    bottom:2vh;
+}
+@media(min-width:0px) and (max-width:575px){
+    .offer_service{
+    position: relative;
+    left:4vw;
+    top:7vh;
+    width:90%;
+    grid-template-columns:1fr;
+    gap:30px;
+}
+.offer_service>.off_block{
+    width:70vw;
+    height:20vh;
+    position:relative;
+    left:15vw;
+}
+#whatWeOffer>h6{
+    position: relative;
+    left:4vw;
+    top:3vh;
+    font-weight: lighter; 
+    width:90%;
+}
+#whatWeOffer{
+    height:160vh;
+    background-color: aliceblue;
 }
 }
