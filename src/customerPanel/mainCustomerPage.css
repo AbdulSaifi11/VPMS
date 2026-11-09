@@ -1,6 +1,11 @@
 html,body{
     overflow-x: hidden!important;
 }
+footer{
+    position: absolute;
+    left:1vw;
+
+}
 #customer_container{
     width:105vw;
     height:240vh;
@@ -343,6 +348,7 @@ html,body{
     right:30vw;
     top:15vh;
 }
+                            /*What We Offer*/
 #whatWeOffer{
     height:100vh;
     background-color: aliceblue;
@@ -429,6 +435,9 @@ html,body{
     bottom:2vh;
 }
 @media(min-width:0px) and (max-width:575px){
+#whatWeOffer{
+    height:170vh !important;
+}
     .offer_service{
     position: relative;
     left:4vw;
@@ -462,3 +471,264 @@ html,body{
     color:#6390BD;
 }
 }
+                                    /*How It Works*/
+#howItWorks{
+    height:80vh;
+    background-color: whitesmoke;
+}
+#howItWorks>p{
+    position: relative;
+    left:4vw;
+    top:3vh;
+    font-family: 'Times New Roman', Times, serif;
+    color:#6390BD;
+}
+#howItWorks>h4{
+    position: relative;
+    left:4vw;
+    top:2vh;   
+}
+#howItWorks>h6{
+    position: relative;
+    left:4vw;
+    top:3vh;
+    font-weight: lighter; 
+}
+.howWorks_points{
+    position: relative;
+    left:4vw;
+    top:7vh;
+    width:90%;
+}
+.howWorks_points>.works_block{
+    width:40vw;
+    height:15vh;
+}
+.howWorks_points>.works_block #count{
+    width:1.8rem;
+    height:1.8rem;
+    background-color: aliceblue;
+    border-radius: 100%;
+    font-size: 0.8rem;
+    color:#6390BD;
+    display: inline-block;
+    padding-top:6px;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+.howWorks_points>.works_block>.works_head{
+    font-size: 0.82em;
+    font-weight: 400;
+    color: lightslategray;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+.howWorks_points>.works_block>.works_content{
+    font-size: 0.74em;
+    position: relative;
+    bottom:2vh;
+    left:4vw;
+}
+#howItWorks>div>#parkTreeImg{
+    position: relative;
+    bottom:55vh;
+    left:55vw;
+    width: 35vw;
+    height:35vh;
+}
+@media (min-width:766px) and (max-width:1150px){
+#howItWorks>div>#parkTreeImg{
+    visibility: visible;
+    position:relative;
+    top:240vh;
+}
+}
+@media (min-width:576px) and (max-width:767px){
+    .howWorks_points{
+    width:90%;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    justify-content: center;
+    gap:0px;
+}
+#howItWorks>div>#parkTreeImg{
+    visibility: visible;
+    position:relative;
+    bottom:-60vh;
+    left:30vw;   
+    width: 60vw;
+    height:40vh; 
+}
+.howWorks_points>.works_block{
+    width:40vw;
+    height:15vh;
+}
+#howItWorks>h6{
+   font-size: 0.9rem;
+}
+#howItWorks>p{
+     font-size: 0.9rem;
+}
+#howItWorks>h4{
+    font-size: 1.2rem; 
+}
+
+}
+@media (min-width:0px) and (max-width:575px){
+    .howWorks_points{
+    width:50%;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    gap:0px;
+}
+#howItWorks>div>#parkTreeImg{
+    visibility: visible;
+    position:relative;
+    bottom:-132vh;
+    left:30vw;   
+    width: 45vw;
+    height:35vh; 
+}
+.howWorks_points>.works_block{
+    width:50vw;
+    height:15vh;
+}
+.howWorks_points>.works_block>.works_head{
+    font-size: 0.74em;
+    font-weight: 400;
+    color: lightslategray;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+.howWorks_points>.works_block>.works_content{
+    font-size: 0.68em;
+    width: 46vw;
+}
+}
+                        /*Plans*/
+#plans{
+    height:100vh;
+    background-color: white;
+    /* background-color: rgba(32, 178, 171, 0.084); */
+}
+#plans>p{
+    position: relative;
+    left:4vw;
+    top:3vh;
+    font-family: 'Times New Roman', Times, serif;
+    color:#6390BD;
+}
+#plans>h4{
+    position: relative;
+    left:4vw;
+    top:2vh;   
+}
+#plans>h6{
+    position: relative;
+    left:4vw;
+    top:3vh;
+    font-weight: lighter; 
+}
+.plans_cards{
+    display:flex;
+    gap:8vw;
+    justify-content: center;
+    position: relative;
+    top:15vh;
+}
+.plans_cards>.Card_P{
+    width:20vw;
+    height:60vh;
+    border:none;
+}
+.Card_P #body_content{
+    font-size: 0.7rem;
+}
+.plans_cards>.Card_P  Button{
+background-color: #2e4d6c;
+color:whitesmoke;
+}
+@media(min-width:768px) and (max-width:850px){
+    #plans{
+    height:140vh;
+}
+.plans_cards{
+    display:flex;
+    flex-direction: column;
+    gap:8vw;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top:5vh;
+}
+.plans_cards>.Card_P{
+    width:60vw;
+    height:35vh;
+    /* border:none; */
+}
+}
+@media(min-width:576px) and (max-width:767px){
+    #plans{
+    height:140vh;
+}
+.plans_cards{
+    display:flex;
+    flex-direction: column;
+    gap:8vw;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top:5vh;
+}
+.plans_cards>.Card_P{
+    width:60vw;
+    height:35vh;
+    /* border:none; */
+}
+}
+@media(min-width:0px) and (max-width:575px){
+    #plans{
+    height:150vh;
+}
+.plans_cards{
+    display:flex;
+    flex-direction: column;
+    gap:8vw;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top:5vh;
+}
+.plans_cards>.Card_P{
+    width:75vw;
+    height:40vh;
+    /* border:none; */
+}
+}
+.plans_cards>.Card_P:hover{
+ border:2px solid darkblue; 
+ animation-name:zoom-out;
+ animation-duration: 0.5s;
+ animation-timing-function: ease-in-out;
+ animation-delay: 0s;
+ animation-iteration-count: 1;
+ animation-fill-mode: both;
+}
+.plans_cards>.Card_P:hover Button{
+    background-color: #0E1B35;
+    color: whitesmoke;
+    box-shadow: 2px 2px 2px lightslategray;
+    font-weight: 600;
+    animation-name:increase;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+ }
+ @keyframes increase{
+     from { transform: translateX(0%) scale(1); width:9vw; }
+  to   { transform: translateX(-35%) scale(1.1); width:12vw }
+ }
+ @keyframes zoom-out{
+    0%{transform:scale(1)}
+    100%{transform:scale(1.05)}
+ }
